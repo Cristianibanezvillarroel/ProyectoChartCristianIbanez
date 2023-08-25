@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Chartjs Cristian Ibanez</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#" class="logo">
+                <img src="logofel.png">
+                <h2>Empresa Facturaenlinea</h2>
+            </a>
+        </div>
+        <div>
+            <nav>
+                <a href="#">DashBoard</a>
+                <a href="#">Registrate</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section >
+            <div class="text-description">
+                <p>En esta seccion usted conocera los dias feriados que existen actualmente en cada pais. Si desea conocer el nombre del dia feriado de un pais en particular, haga clic en Buscar.</p>
+            </div>
+            <div >
+                <div class="row g-1">
+                    <table class="container text-center w-100 mt-4">
+                        <tr>
+                            <td class="col-xs-12 col-md-6 col-lg-4">
+                                <label>Pais</label>
+                                <select class="form-select" aria-label="Default select example" name="countries" id="select-countries">
+                                </select>
+                            </td>
+                            <td class="col-xs-12 col-md-6 col-lg-4">
+                                <label>Año</label>
+                                <input class="form-control" type="number" name="year" id="year" placeholder="Ingrese aqui el año">
+                                <input type="text" id="input-average" style="display: none;">
+                            </td>
+                            <td class="col-xs-12 col-md-6 col-lg-4">                                
+                                <button id="button-function" class="btn btn-success">Buscar</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row g-1">
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <table class="table" id="table-tittle">
+                    </table>
+                    <table class="table" id="table-data">                        
+                    </table>
+                </div>
+                <div id="canvas" class="col-xs-12 col-md-6 col-lg-6">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="row g-1">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <a href="#" class="logo_empresa_footer">
+                <img src="logofel.png" alt="logo-empresa-footer">
+                <p>Solucion completo para la administracion de tu negocio</p>
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <h3>Menu Inicio</h3>
+            <ul>
+                <a href="#">Suite Facturacion</a>
+                <a href="#">Coaching Administrativo</a>
+                <a href="#">Libertad financiera</a>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <h3>Comunidad</h3>
+            <ul>
+                <a href="#">Blog Facturaenlinea</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <h3>Contacto</h3>
+            <ul>
+                <a href="#">Sucursal virtual</a>
+                <a href="#">Nuestras sucursales</a>
+                <a href="#">Solicita una llamada</a>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" type="module"></script>    
+</body>
+</html>
