@@ -117,7 +117,7 @@ document.querySelector('#button-function').addEventListener('click', async funct
             datasets: [{
                 label: '# Total Feriados',
                 data: arrayData,
-                borderWidth: 1,
+                borderWidth: 5,
                 backgroundColor: ['rgba(255, 159, 64, 0.2)','rgba(167, 157, 148, 1)']
             }]
         },
